@@ -1,0 +1,53 @@
+<!-- Demonstration of Comparission Operators -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparission Operators</title>
+  </head>
+  <body>
+    <script>
+      let a = 6;
+      let b = 4;
+      //   (== : Equals to)
+      console.log("a = ", a + " & b = ", b);
+      console.log("Is a equals to b? ", a == b); //False
+
+      // (!== : Not Equals to)
+      console.log("Is a  Not equals to b? ", a != b); //True
+
+      //   ( > : Greater than)
+      console.log("a is greater than b : ", a > b); // True
+
+      //   ( >= : Greater than or equals to)
+      console.log("a is greater than or equals to b : ", a >= b); // True
+
+      //   ( <: Less than)
+      console.log("a is less than  b : ", a < b); // False
+
+      //  ( <= : Less than or equals to)
+      console.log("a is less than or equals to b : ", a <= b); // False
+
+      //   Strict equals and not equals
+      let num1 = 5;
+      let numName = "5";
+      console.log("Num1 = ", num1 + " & numName = ", numName);
+      console.log(
+        " In normal equals to: Is num1 equals to numName? ",
+        num1 == numName
+      ); //True [Because the nunmName will be change into number by javascript]
+
+      //   In order to avoid this strict equal and strict not equal is used.
+
+      //   (=== : Strict Equal)
+      console.log("In Strict : Is num1 equals to numName? ", num1 === numName); //False
+
+      //   (!== : Strict Not Equal)
+      console.log(
+        "In Strict : Is num1 not equals to numName? ",
+        num1 !== numName
+      ); //True
+    </script>
+  </body>
+</html>

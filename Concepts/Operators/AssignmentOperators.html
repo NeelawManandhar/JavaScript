@@ -1,0 +1,44 @@
+<!-- Demonstration of Assignment Operators -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Operators</title>
+  </head>
+  <body>
+    <script>
+      //Assignment (=)
+      let a = 4;
+      let b = 5;
+      console.log("a = ", a + " & b = ", b); // a = 4 and b = 5
+
+      //Addition Assignment (+=)
+      console.log("a = ", a);
+      console.log("a += 2 = ", (a += 2)); //a = a + 2
+
+      //Substraction Assignment (-=)
+      console.log("a -= 2 = ", (a -= 2)); //a = a - 2
+
+      //Multiplication Assignment (*=)
+      console.log("a *= 2 = ", (a *= 2)); //a = a * 2
+
+      //Division Assignment (/=)
+      console.log("a /= 2 = ", (a /= 2)); //a = a / 2
+
+      //Exponentiation Assignment (**=)
+      console.log("a **= 2 = ", (a **= 2)); //a = a ** 2
+
+      //Modulus Assignment (%=)
+      console.log("a %= 2 = ", (a %= 2)); //a = a % 2
+
+      //Left Shift Assignment (<<=)
+      console.log("b = ", b);
+      console.log("b <<= 3 = ", (b <<= 3)); //20  -> Here, b = 5 [101 in binary] after Left shift by 3, three bits are shifted to the left making it [101000] i.e 40.
+
+      //Right Shift Assignment (>>=)
+      console.log("b = ", b);
+      console.log("b >>= 4", (b >>= 4)); //2 -> Here,  b = 40 [101000 in binary] after Right shift by 4, four bits are shifted to right making it [000010] i.e 2.
+    </script>
+  </body>
+</html>

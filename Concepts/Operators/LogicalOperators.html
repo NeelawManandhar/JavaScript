@@ -1,0 +1,41 @@
+<!-- Demonstration of Logical Operators -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators</title>
+  </head>
+  <body>
+    <script>
+      //  AND Operator(&&)
+      /*
+        [Note : If one of the condition is false then output will be false otherwise output will be true.]*/
+      let a = 6;
+      let b = 5;
+      console.log("AND Operators");
+      console.log("a && b = ", a === 6 && b < a); //True (True && True)
+      console.log("a && b = ", a === 6 && b > a); //False (True && False)
+      console.log("a && b = ", a === 4 && b < a); //False (False && True)
+      console.log("a && b = ", a === 4 && b > a); //False (False && False)
+
+      //  OR Operator(||)
+      /*[Note : If both the conditions are false then only output will be false otherwise the output will be true.]*/
+      let c = 6;
+      let d = 5;
+      console.log("OR Operators");
+      console.log("a || b = ", c === 6 || d < c); //True (True || True)
+      console.log("a || b = ", c === 6 || d > c); //True (True || False)
+      console.log("a || b = ", c === 4 || d < c); //True (False || True)
+      console.log("a || b = ", c === 4 || d > c); //False (False || False)
+
+      //  NOT Operator (!)
+      /*[Note : Returns the opposite boolean value of the operand.]*/
+      let e = 8;
+      let f = 5;
+      console.log("NOT Operators");
+      console.log(!(e === f)); //True (The condition give true as output but the NOT operetor gives the opposite)
+      console.log(!(e !== f)); //False (The condition give false as output but the NOT operetor gives the opposite)
+    </script>
+  </body>
+</html>
